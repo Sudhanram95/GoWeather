@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:id="@+id/rel_location_dialog"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="@dimen/dialog_width"
+        android:layout_height="@dimen/dialog_height"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:background="@color/transparent"
+        android:layout_below="@id/img_trust"
+        android:layout_marginTop="@dimen/layout_overlap">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/card_radius">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/padding"
+                    android:paddingRight="@dimen/padding"
+                    android:layout_centerInParent="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/small_image_area"
+                            android:layout_height="@dimen/small_image_area" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="@string/permission_title"
+                            android:layout_gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/para_margin">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="."
+                            android:textColor="@color/black"
+                            android:layout_gravity="center_vertical"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/medium_textsize"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding"
+                            android:textSize="@dimen/medium_textsize"
+                            android:textColor="@color/black"
+                            android:text="@string/requirement_1"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/para_margin">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="."
+                            android:textColor="@color/black"
+                            android:layout_gravity="center_vertical"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/medium_textsize"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding"
+                            android:textSize="@dimen/medium_textsize"
+                            android:textColor="@color/black"
+                            android:text="@string/requirement_2"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="@dimen/button_width"
+                        android:layout_height="@dimen/button_height"
+                        android:id="@+id/btn_grand_permission"
+                        android:text="@string/grand_permission"
+                        android:textAllCaps="false"
+                        style="@style/Button"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/para_margin"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/medium_image_area"
+        android:layout_height="@dimen/medium_image_area"
+        android:id="@+id/img_trust"
+        app:srcCompat="@drawable/ic_trust"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

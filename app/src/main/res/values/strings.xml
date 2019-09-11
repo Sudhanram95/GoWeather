@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GoWeather</string>
+    <string name="cannot_locate">Oops!, We couldn\'t locate your city.</string>
+    <string name="enter_your_city">Enter your city</string>
+    <string name="error_msg">Something went wrong at your end!</string>
+    <string name="retry">Retry</string>
+    <string name="permission_title">We need Location Permission to</string>
+    <string name="requirement_1">Give the current temperature of your locality</string>
+    <string name="requirement_2">Forecast the weather report for next four days</string>
+    <string name="grand_permission">Grand Permission</string>
+</resources>
